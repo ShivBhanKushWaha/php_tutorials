@@ -27,4 +27,7 @@ echo "<br/>";
 $any = "changeable type";
 echo $any;
 
+// to initialize same value at two variable
+$a = $b = 10;
+echo $a, $b;
 ?>
