@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form handling with php</title>
+</head>
+<body>
+    <form action="form.php" method="post">
+        <input type="text" name="name" placeholder="Enter name">
+        <br><br>
+        <input type="email" name="email" placeholder="Enter email">
+        <br><br>
+        <input type="password" name="password" placeholder="Enter password">
+        <br><br>
+        <input type="checkbox" name="skills[]" value="PHP"><span>PHP</span>
+        <br>
+        <input type="checkbox" name="skills[]" value="ReactJs"><span>ReactJs</span>
+        <br>
+        <input type="checkbox" name="skills[]" value="NodeJs"><span>NodeJs</span>
+        <br>
+        <input type="checkbox" name="skills[]" value="ExpressJs"><span>ExpressJs</span>
+        <br>
+        <br>
+        <input type="radio" name="gender" value="male"><span>male</span>
+        <br>
+        <input type="radio" name="gender" value="female"><span>female</span>
+        <br>
+        <br>
+        <select name="city" id="">
+            <option value="">Selcet your city</option>
+            <option value="Noida">Noida</option>
+            <option value="Gurgaon">Gurgaon</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Agra">Agra</option>
+        </select>
+        <br><br>
+        <textarea name="bio" id=""></textarea>
+        <br><br>
+        <button>Signup</button>
+    </form>
+</body>
+</html>
