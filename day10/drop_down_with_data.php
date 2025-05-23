@@ -1,5 +1,5 @@
 <?php
-include_once("./config.php");
+include_once("../mysql_connection_config/config.php");
 
 // to get all data
 // $getStudents = $conn -> prepare("SELECT * FROM students");

@@ -18,7 +18,7 @@ $students = $conn->prepare("SELECT * from students");
 $students->execute();
 
 $result = $students->fetchAll();
-// print_r($result)
+// print_r($resutl)
 
 echo "<table border='1'";
 foreach ($result as $student) {
@@ -31,6 +31,7 @@ foreach ($result as $student) {
     <td><form method='post'>
     <button name='delete' value=" . $student['id'] . ">Delete</button>
     </form></td>
+    <td><a href='./populate_data_inputs_field.php?id=".$student['id']."'>Edit</a></td>
     </tr>";
 }
 echo "</table>";

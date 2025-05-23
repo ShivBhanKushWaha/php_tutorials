@@ -1,6 +1,6 @@
 <?php
 // read data from mysql in php
-include_once("config.php");
+include_once("../mysql_connection_config/config.php");
 
 $getStudents = $conn->prepare("SELECT * FROM students");
 $getStudents->execute();

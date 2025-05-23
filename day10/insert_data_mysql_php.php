@@ -25,7 +25,7 @@ if(isset($_POST['name'])){
     $city = $_POST['city'];
     $year = $_POST['year'];
 }
-include_once("./config.php");
+include_once("../mysql_connection_config/config.php");
 // data ko insert krne ke liye ek query prepare krni padegi uske bad execute krna hai 
 $student = $conn -> prepare("INSERT into `students` (`id`,`name`,`course`,`batch`,`city`,`year`) VALUES (NULL, '$name','$course','$batch','$city','$year')");
 
